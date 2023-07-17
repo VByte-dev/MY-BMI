@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MY BMI</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+      body {
+        background-color: rgb(18, 18, 18);
+        font-family: monospace;
+      }
+
+      .navbar {
+        background-color: rgb(255, 204, 0) !important;
+        font-family: monospace;
+      }
+
+      .input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 50vh;
+      }
+
+      .input-container .form-control {
+        border: none;
+        background-color: white;
+        color: black; /* Update the text color to black */
+        text-align: center;
+        font-size: 18px;
+        width: 250px;
+        padding: 10px;
+      }
+
+      .input-container .btn-primary {
+        background-color: rgb(255, 204, 0);
+        color: black;
+        border: none;
+      }
+
+      .input-container .btn-primary:focus {
+        box-shadow: none;
+        background-color: rgb(255, 204, 0);
+        font-weight: bolder;
+      }
+
+
+      .footer {
+        background-color: rgb(255, 204, 0);
+        color: black;
+        text-align: center;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .footer-text {
+        font-size: 14px;
+        line-height: 1;
+        margin: 0;
+      }
+
+      .footer-icons {
+        margin-left: 10px;
+      }
+
+      .footer-icons a {
+        color: black;
+        margin-left: 10px;
+        text-decoration: none;
+      }
+
+      .footer-icons i {
+        font-size: 20px;
+      }
+
+      .quote {
+        color: rgb(255, 204, 0);
+        margin-top: 50px;
+        font-weight: bold;
+        font-size: 15px;
+        text-align: center;
+        margin-bottom: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="static/Logo.png" alt="Bootstrap" width="50" height="50">
+        </a>
+      </div>
+    </nav>
+
+    <div style="color: rgb(255, 204, 0); text-align: center; margin-top: 80px;">
+      <h7>{{v}}</h7>
+    </div>
+
+    <!--Input Layer-->
+    <div class="input-container">
+      <form action="#" method="post">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label" style="color: rgb(255, 204, 0);">Height</label>
+          <input type="text" name="height" class="form-control" id="height" aria-describedby="number" placeholder="Enter your Height in m" pattern="[0-9]+(\.[0-9]+)?">
+    
+        </div>
+    
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label" style="color: rgb(255, 204, 0);">Weight</label>
+          <input type="text" name="weight" class="form-control" id="weight" aria-describedby="number" placeholder="Enter your Weight in kg" pattern="[0-9]+(\.[0-9]+)?">
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Calculate</button>
+      </form>
+    </div>
+
+    <!-- Quote -->
+    <div class="quote">
+      <p>"The Greatest Wealth is Health"</p>
+    </div> 
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div>
+        <p class="footer-text">Made by VByte</p>
+      </div>
+      <div class="footer-icons">
+        <a href="https://github.com/VByte222" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+        <a href="https://www.instagram.com/vbyte_official/" target="_blank">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </footer>   
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+  </body>
+</html>
